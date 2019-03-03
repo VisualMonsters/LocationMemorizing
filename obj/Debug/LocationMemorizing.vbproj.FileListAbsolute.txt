@@ -1,0 +1,24 @@
+C:\Users\chudzip1\AppData\Local\Temporary Projects\LocationMemorizing\bin\Debug\LocationMemorizing.exe.config
+C:\Users\chudzip1\AppData\Local\Temporary Projects\LocationMemorizing\bin\Debug\LocationMemorizing.exe
+C:\Users\chudzip1\AppData\Local\Temporary Projects\LocationMemorizing\bin\Debug\LocationMemorizing.pdb
+C:\Users\chudzip1\AppData\Local\Temporary Projects\LocationMemorizing\bin\Debug\LocationMemorizing.xml
+C:\Users\chudzip1\AppData\Local\Temporary Projects\LocationMemorizing\obj\Debug\LocationMemorizing.vbprojAssemblyReference.cache
+C:\Users\chudzip1\AppData\Local\Temporary Projects\LocationMemorizing\obj\Debug\LocationMemorizing.Form1.resources
+C:\Users\chudzip1\AppData\Local\Temporary Projects\LocationMemorizing\obj\Debug\LocationMemorizing.Resources.resources
+C:\Users\chudzip1\AppData\Local\Temporary Projects\LocationMemorizing\obj\Debug\LocationMemorizing.vbproj.GenerateResource.cache
+C:\Users\chudzip1\AppData\Local\Temporary Projects\LocationMemorizing\obj\Debug\LocationMemorizing.vbproj.CoreCompileInputs.cache
+C:\Users\chudzip1\AppData\Local\Temporary Projects\LocationMemorizing\obj\Debug\LocationMemorizing.exe
+C:\Users\chudzip1\AppData\Local\Temporary Projects\LocationMemorizing\obj\Debug\LocationMemorizing.xml
+C:\Users\chudzip1\AppData\Local\Temporary Projects\LocationMemorizing\obj\Debug\LocationMemorizing.pdb
+C:\Users\chudzip1\Documents\priv\LocationMemorizing\LocationMemorizing\LocationMemorizing\bin\Debug\LocationMemorizing.exe.config
+C:\Users\chudzip1\Documents\priv\LocationMemorizing\LocationMemorizing\LocationMemorizing\bin\Debug\LocationMemorizing.exe
+C:\Users\chudzip1\Documents\priv\LocationMemorizing\LocationMemorizing\LocationMemorizing\bin\Debug\LocationMemorizing.pdb
+C:\Users\chudzip1\Documents\priv\LocationMemorizing\LocationMemorizing\LocationMemorizing\bin\Debug\LocationMemorizing.xml
+C:\Users\chudzip1\Documents\priv\LocationMemorizing\LocationMemorizing\LocationMemorizing\obj\Debug\LocationMemorizing.vbprojAssemblyReference.cache
+C:\Users\chudzip1\Documents\priv\LocationMemorizing\LocationMemorizing\LocationMemorizing\obj\Debug\LocationMemorizing.Form1.resources
+C:\Users\chudzip1\Documents\priv\LocationMemorizing\LocationMemorizing\LocationMemorizing\obj\Debug\LocationMemorizing.Resources.resources
+C:\Users\chudzip1\Documents\priv\LocationMemorizing\LocationMemorizing\LocationMemorizing\obj\Debug\LocationMemorizing.vbproj.GenerateResource.cache
+C:\Users\chudzip1\Documents\priv\LocationMemorizing\LocationMemorizing\LocationMemorizing\obj\Debug\LocationMemorizing.vbproj.CoreCompileInputs.cache
+C:\Users\chudzip1\Documents\priv\LocationMemorizing\LocationMemorizing\LocationMemorizing\obj\Debug\LocationMemorizing.exe
+C:\Users\chudzip1\Documents\priv\LocationMemorizing\LocationMemorizing\LocationMemorizing\obj\Debug\LocationMemorizing.xml
+C:\Users\chudzip1\Documents\priv\LocationMemorizing\LocationMemorizing\LocationMemorizing\obj\Debug\LocationMemorizing.pdb
