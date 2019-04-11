@@ -1,74 +1,59 @@
 ﻿Imports System.Threading
 
 Public Class Form1
+    'rdzeń gry
     Dim LocationClass As LocationClass
+    'odpowiedzialna za ułożenie elementów
     Dim ElementsLocation As New ElementsLocation
 
-    Dim czas As Integer = 0
-    Dim zmienna As Integer = 0
+    Public time As Integer = 0
 
 
-    Private Sub PictureBox6_Click(sender As Object, e As EventArgs) Handles Label9.Click
-        LocationClass = New LocationClass(3, Panel3, Label11, Label2, Label10.Text)
+    Private Sub startLabel_Click(sender As Object, e As EventArgs) Handles startLabel.Click
+        'rzutowanie elementów gry
+        LocationClass = New LocationClass(3, mainBoard, points, left, level.Text, lives)
+        'przygotowanie elementów
+        points.Text = "0"
 
-        Label11.Text = "0"
-        Panel3.Controls.Clear()
-        Panel3.Enabled = True
-        Panel3.BackColor = Color.FromArgb(240, 240, 240)
+        mainBoard.Controls.Clear()
+        mainBoard.Enabled = True
+        mainBoard.BackColor = Color.FromArgb(240, 240, 240)
 
-        czas = 0
+        time = 0
+        'czas start
         Timer1.Start()
-
-        ElementsLocation.setLocation(Panel3, Panel1, Panel4, Label10.Text, Me.Height, Me.Width)
-
-        Label1.Text = LocationClass.getLives.ToString
-
-        LocationClass.stworzTabeleKwadratow(Panel3)
+        'ustawiamy lokacje planszy na podstawie levelu gracza
+        setMainBoardLocation(level.Text)
+        'zaczynamy gre od stworzenia kwadratów
+        LocationClass.createNewGame()
 
         'pasek w zegarze
         Panel2.Location = New Point(0, 0)
-        zmienna = 4
     End Sub
 
-    Public Sub nowykwadrat()
-        ' Panel3.BackColor = Color.LightGreen
-        Panel3.Enabled = False
-        Application.DoEvents()
-        Thread.Sleep(500)
-        Application.DoEvents()
-        Panel3.Visible = False
-        Label1.Text = LocationClass.getLives.ToString
-        Panel3.BackColor = Color.FromArgb(240, 240, 240)
-        Panel3.Enabled = True
-        ElementsLocation.setLocation(Panel3, Panel1, Panel4,  Label10.Text, Me.Height, Me.Width)
-
-        zmienna -= 1
-
-        If Not zmienna = 0 Then
-            czas = 0
-            Timer1.Start()
-            LocationClass.stworzTabeleKwadratow(Panel3)
-        Else
-            czas = 0
-            Timer1.Start()
-            LocationClass.stworzTabeleKwadratow(Panel3)
-            zmienna = 4
-            LocationClass.setLevel = 1
-        End If
-        Panel3.Visible = True
+    Public Sub setMainBoardLocation(ByVal level As Integer)
+        ElementsLocation.setLocation(mainBoard, timeControlPanel, gameControlPanel, level, Me.Height, Me.Width)
     End Sub
 
 #Region "pomocnicze"
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-        Label10.Text += 1
+        level.Text += 1
     End Sub
 
     Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
-        If Not Label10.Text - 1 <= 0 Then
-            Label10.Text -= 1
+        If Not level.Text - 1 <= 0 Then
+            level.Text -= 1
         End If
     End Sub
+
+    Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles MyBase.Resize
+        If Not (LocationClass Is Nothing) Then
+            setMainBoardLocation(LocationClass.getLevel)
+        End If
+
+    End Sub
+#End Region
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Dim _point As New Point
@@ -76,12 +61,12 @@ Public Class Form1
         _point.X -= 2
         Panel2.Location = _point
         If _point.X <= -120 Then
-            LocationClass.UkryjTabeleKwadratow()
+            '
+            LocationClass.hideSquares()
             Panel2.Location = New Point(0, 0)
             Timer1.Stop()
         End If
 
     End Sub
-#End Region
 
 End Class

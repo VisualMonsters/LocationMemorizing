@@ -27,5 +27,12 @@ LocationMemorizing
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="M:LocationMemorizing.LocationClass.PB_red(System.Object,System.EventArgs)">
+ dlatego gdy klikniemy na szry kwadrat który kiedyś był czerwony jego adres się nie zmieni
+ 
+</member>
+<member name="M:LocationMemorizing.LocationClass.PB_grey(System.Object,System.EventArgs)">
+ 
+</member>
 </members>
 </doc>
