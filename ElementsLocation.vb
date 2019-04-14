@@ -7,13 +7,12 @@
                            ByVal formHeight As Integer,
                            ByVal formWidth As Integer)
 
-        ' Dim height As Integer = formHeight - gameBoard.Location.Y - (formHeight - bottomPanel.Location.Y)
         Dim height As Integer = formHeight - topPanel.Location.Y - topPanel.Height - (formHeight - bottomPanel.Location.Y)
         Dim width As Integer = formWidth
 
         If Not (width < 360 + 120 * (level - 1) Or height < 360 + 120 * (level - 1)) Then
             gameBoard.Width = 360 + 120 * (level - 1)
-            gameBoard.Height = 360 + 120 * (level - 1)
+            gameBoard.Height = 360 + 220 * (level - 1)
         Else
             If width > height Then
                 gameBoard.Width = height - 20

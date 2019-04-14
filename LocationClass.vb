@@ -23,7 +23,8 @@ Public Class LocationClass
         End Get
     End Property
 
-    Public Sub New(lives As Integer, gameBoard As Panel, pointsLabel As Label, clickCountsLabel As Label, level As Integer, livesLabel As Label)
+    Public Sub New(lives As Integer, gameBoard As Panel, pointsLabel As Label,
+                   clickCountsLabel As Label, level As Integer, livesLabel As Label)
         Me.lives = lives
         Me.gameBoard = gameBoard
         Me.pointsLabel = pointsLabel
@@ -142,7 +143,7 @@ Public Class LocationClass
             'nie ma więcej elementów
             DirectCast(sender, PictureBox).BackColor = Color.Red
             pointsLabel.Text = Math.Round(points).ToString
-            'koniec gry, zwiększ poziom i przejdź do następnej gry
+            'koniec gry
             checker(0)
         End If
     End Sub
